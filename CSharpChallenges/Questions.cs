@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CSharpChallenges
@@ -7,7 +8,7 @@ namespace CSharpChallenges
     public class Questions
     {
         [TestMethod]
-        public void Question1()
+        public void Question1_NameAndAge()
         {
             string firstName;
             string lastName;
@@ -18,33 +19,56 @@ namespace CSharpChallenges
             age = 28;
             Console.WriteLine($"My name is {firstName } {lastName}, and I am {age}.");
         }
-
         [TestMethod]
-        public void Question2()
+        public void Question2_Array()
         {
-
+            string[] movie1 = { "Harry Potter", "Public Enemy", "Peaky Blinders", "Money Heist"};
         }
-
         [TestMethod]
-        public void Question3()
+        public void Question3_DatesAndTimes()
         {
-
+            List<DateTime> listOfDates = new List<DateTime>();
+            DateTime today = DateTime.Now;
+            listOfDates.Add(today);
+            listOfDates.Add(new DateTime(2020,12,25));
+            listOfDates.Add(new DateTime(2020, 3, 12));
+            listOfDates.Add(new DateTime(2020, 6, 16));
         }
-
         [TestMethod]
-        public void Question4()
+        public void Question4_MathOperators()
         {
-
+            int age = 28;
+            Console.WriteLine(age + 7);
+            Console.WriteLine(age - 7);
+            Console.WriteLine(age * 7);
+            Console.WriteLine(age / 7);
+            Console.WriteLine(age % 7);
         }
-
         [TestMethod]
-        public void Question5()
+        public void Question5_Conditionals()
         {
+            Console.WriteLine("How many hours of sleep did you get?");
+            int hours = 4;  //Would be Console.ReadLine();
 
+            if (hours >= 10)
+            {
+                Console.WriteLine("Wow, that's a lot of sleep!");
+            }
+            else if (8 < hours && hours < 10)
+            {
+                Console.WriteLine("You should be pretty rested.");
+            }
+            else if (4 < hours && hours < 8)
+            {
+                Console.WriteLine("Bummer!");
+            }
+            else
+            {
+                Console.WriteLine("Oh man, get some sleep!");
+            }
         }
-
         [TestMethod]
-        public void Question6()
+        public void Question6_SwitchCase()
         {
             string firstQuestion = "How are you doing today?";
             Console.WriteLine(firstQuestion);
@@ -71,9 +95,8 @@ namespace CSharpChallenges
                     break;
             }
         }
-
         [TestMethod]
-        public void Question7()
+        public void Question7_Supercalifragilisticexpialidocious()
         {
             string word = "Supercalifragilisticexpialidocious";
             //--Part 1
