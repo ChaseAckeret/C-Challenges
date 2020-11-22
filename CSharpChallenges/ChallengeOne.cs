@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CSharpChallenges
 {
     [TestClass]
-    public class Questions
+    public class ChallengeOne
     {
         [TestMethod]
         public void Question1_NameAndAge()
