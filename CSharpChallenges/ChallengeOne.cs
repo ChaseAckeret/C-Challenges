@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CSharpChallenges
+namespace _01_Challenge
 {
     [TestClass]
     public class ChallengeOne
